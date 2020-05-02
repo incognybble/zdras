@@ -82,6 +82,7 @@
 \setcounter{wis}{12} % 1
 \setcounter{cha}{18} % 4
 
+\setcounter{chamod}{\value{cha}/2 - 5}
 
 \setcounter{acnatural}{0}
 \setcounter{acarmour}{0}
@@ -108,11 +109,14 @@ Toughness \\
 Brigand (+1 bonus to bluff, diplomacy, intimidate and sense motive with brigands, thieves and bandits) \\
 Dirty fighter (+1 damage) \\
 }
+
+\newcounter{laughingtouch}
+\setcounter{laughingtouch}{\value{chamod}+3}
 \newcommand{\specialabilities}{
 +2 spellcraft to id properties of magic items \\
 +2 caster level to overcome spell resistance \\
 --- \\
-3+\thechamod/day Laughing touch (melee) \\
+\thelaughingtouch/day Laughing touch (melee) \\
 Elven immunity (immune to magic sleep effects) \\
 Woodland strike (move through undergrowth without penalty) \\
 Low-light vision (twice as far as humans in dim light) \\
