@@ -55,29 +55,29 @@
 \newcounter{casterlevel}
 
 \newcommand{\charname}{Z'drasdorov}
-\newcommand{\charrace}{Elf}
+\newcommand{\charrace}{Halfling}
 \newcommand{\charclass}{Sorceror 7}
 \newcommand{\charalignment}{CG}
-\newcommand{\charsex}{Male}
-\newcommand{\charsize}{Medium}
-\setcounter{sizemod}{0}
+\newcommand{\charsex}{Female}
+\newcommand{\charsize}{Small}
+\setcounter{sizemod}{-1}
 \newcommand{\chartype}{Humanoid}
-\newcommand{\charheight}{6'1``}
-\newcommand{\charweight}{57.6kg/127lb}
+\newcommand{\charheight}{2'9``}
+\newcommand{\charweight}{12.7kg/28lb}
 \newcommand{\charhair}{?}
 \newcommand{\chareyes}{?}
-\setcounter{age}{126}
+\setcounter{age}{25}
 
-\setcounter{xp}{38400}
+\setcounter{xp}{40050}
 \setcounter{ecl}{7}
 
-\setcounter{totalhp}{44}
-\setcounter{currenthp}{44}
-\newcommand{\speed}{30', 6sq}
+\setcounter{totalhp}{51}
+\setcounter{currenthp}{51}
+\newcommand{\speed}{20', 4sq}
 
-\setcounter{str}{9} % -1
+\setcounter{str}{7} % -2
 \setcounter{dex}{14} % 2
-\setcounter{con}{10} % 0
+\setcounter{con}{12} % 1
 \setcounter{int}{14} % 2
 \setcounter{wis}{12} % 1
 \setcounter{cha}{22} % 6
@@ -93,6 +93,9 @@
 \setcounter{basefort}{2}
 \setcounter{baseref}{2}
 \setcounter{basewill}{5}
+\setcounter{fortmisc}{1} % luck
+\setcounter{refmisc}{1} % luck
+\setcounter{willmisc}{1} %luck
 \setcounter{resistancesave}{0}
 \setcounter{bab}{3}
 \setcounter{spellresistance}{0}
@@ -120,9 +123,7 @@ Dirty fighter (+1 damage when flanking) \\
 +2 caster level to overcome spell resistance \\
 --- \\
 \thelaughingtouch/day Laughing touch (melee) \\
-Elven immunity (immune to magic sleep effects) \\
 Woodland strike (move through undergrowth without penalty) \\
-Low-light vision (twice as far as humans in dim light) \\
 }
 
 \newcommand{\conditionalmods}{
@@ -135,7 +136,7 @@ Common, Elven, Draconic, Sylvan \\
 \setcounter{medload}{33}
 \setcounter{heavyload}{\value{lightload} + \value{medload}}
 
-\setcounter{money}{2190}
+\setcounter{money}{1190}
 
 \newcommand{\conditionalspellmods}{
 }
